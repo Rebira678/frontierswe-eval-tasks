@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir flask requests pyjwt cryptography
+RUN pip install --no-cache-dir flask==3.0.3 requests==2.32.3 pyjwt==2.8.0 cryptography==42.0.8
 
 WORKDIR /workspace/mcp-gateway
 
@@ -51,7 +51,10 @@ import os
 import subprocess
 import requests
 import jwt
-from flask import Flask, request, jsonify
+import flask
+Flask = flask.Flask
+request = flask.request
+jsonify = flask.jsonify
 
 app = Flask(__name__)
 KEYS_DIR = "/workspace/mcp-gateway/keys"
