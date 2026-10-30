@@ -1,5 +1,9 @@
 version = "1.0"
 
+[task]
+name = "rustlabs/lsm-kv-engine"
+description = "Implement a crash-recoverable, concurrent Log-Structured Merge-tree (LSM) key-value engine with WAL, Bloom filters, and leveled compaction in Go."
+
 [metadata]
 author_name = "Rebira Adugna"
 author_email = "rebikman9@gmail.com"
