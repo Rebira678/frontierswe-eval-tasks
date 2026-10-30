@@ -1,0 +1,19 @@
+# Harbor run logs and jobs
+jobs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS / Editor artifacts
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Local evaluation instructions and submission notes
+about.md
+sample.md
+SUBMISSION.md
