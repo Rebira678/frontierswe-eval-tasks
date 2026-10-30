@@ -1,5 +1,9 @@
 version = "1.0"
 
+[task]
+name = "rustlabs/mcp-gateway-sandbox-hardening"
+description = "Investigate incident audit logs to generate a forensics report and remediate SSRF, JWT traversal, sandbox breakout, and command injection in an AI agent tool gateway."
+
 [metadata]
 author_name = "Rebira Adugna"
 author_email = "rebikman9@gmail.com"
