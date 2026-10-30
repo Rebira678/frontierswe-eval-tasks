@@ -107,7 +107,7 @@ try:
 
     # 4b. Sandbox Path Traversal Protection
     traversal_paths = [
-        "../../../../workspace/canary.txt",
+        os.path.join("..", "..", "..", "..", "workspace", "canary.txt"),
         "../../keys/default.key",
         "../keys/default.key",
         "/etc/passwd",
